@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Con archivos locales de Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Antiguo alumnado y empleo - IES Ruiz Gijón</title>
+
+</head>
+
+<body class="bg-primary-subtle">
+
+  <div class="container-xl">
+    <!-- Header -->
+    <header class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
+      <!-- logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
+        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+      </figure>
+
+      <!-- switch -->
+      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
+        <a href="index.html" id="ofertas" class="text-decoration-none py-1 ">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="btn btn-primary text-white rounded-5 py-1 px-4">Alumnado</a>
+      </nav>
+
+      <!-- enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
+            class="bi bi-chat ms-1"></i></a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo <i
+            class="bi bi-plus"></i></a>
+      </div>
+
+      <!-- perfil -->
+      <section class="col-xl-2 row align-items-center justify-content-center">
+        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
+        <a href="nuevo_alumno.html"
+          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
+          style="width: 2.7rem;">Y</a>
+        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      </section>
+    </header>
+
+    <!-- Opiniones -->
+    <div class="row mx-2 my-3 justify-content-between gap-3">
+
+      <!-- opiniones -->
+      <section class="col bg-white rounded-1 shadow p-4">
+
+        <h3 class="card-title">Opiniones sobre empresas de antiguos alumnos</h3>
+
+
+        <!-- opinión 1 -->
+        <div class="bg-primary-subtle p-3 pb-1 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-light text-secondary">Alumno: <span class="fw-semibold">John Doe</span></h5>
+              <h6 class="fw-light text-secondary">Experiencia en la empresa: <span class="fw-semibold">3 años</span>
+              </h6>
+            </div>
+            <p class="btn btn-primary rounded-5 py-1 px-4 me-3 fw-semibold pe-none">Valrog</p>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, sint laborum soluta odit ea
+            recusandae velit? Beatae praesentium illum libero!</p>
+        </div>
+        <!-- opinión 2 -->
+        <div class="bg-primary-subtle p-3 pb-1 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-light text-secondary">Alumno: <span class="fw-semibold">Pepe Pérez</span></h5>
+              <h6 class="fw-light text-secondary">Experiencia en la empresa: <span class="fw-semibold">1 años</span>
+              </h6>
+            </div>
+            <p class="btn btn-primary rounded-5 py-1 px-4 me-3 fw-semibold pe-none">NTT Data</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur temporibus sint optio molestiae dolore laudantium, debitis explicabo? Harum, cumque asperiores, voluptas odio alias, tempore sit libero neque reiciendis aliquam delectus sunt!</p>
+        </div>
+        <!-- opinión 3 -->
+        <div class="bg-primary-subtle p-3 pb-1 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-light text-secondary">Alumno: <span class="fw-semibold">Lola Lumares</span></h5>
+              <h6 class="fw-light text-secondary">Experiencia en la empresa: <span class="fw-semibold">5 años</span>
+              </h6>
+            </div>
+            <p class="btn btn-primary rounded-5 py-1 px-4 me-3 fw-semibold pe-none">Emergya</p>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati est earum maiores quo similique, a fuga ea? Quam odit doloremque numquam quaerat officia, necessitatibus sapiente aspernatur eos nam, iste consequuntur nemo, praesentium voluptas sunt suscipit illo. Sit, dolores assumenda? Necessitatibus laboriosam fuga reprehenderit accusantium cupiditate!</p>
+        </div>
+        
+
+      </section>
+
+      <!-- opiniones de alumnos -->
+      <div class="col-lg-4">
+
+        <!-- filtro -->
+        <div class="row bg-white rounded-1 shadow p-4">
+          <div class="p-0">
+            <select class="form-select bg-white rounded-1 " aria-label="Filtro trabajo por fecha">
+              <option selected>Fecha</option>
+              <option value="1">Más reciente</option>
+              <option value="2">Más antigua</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- opiniones -->
+        <form action="#" class="needs-validation" novalidate>
+          <div class="row bg-white rounded-1 shadow p-4 px-2 mt-3">
+
+            <legend class="">Nueva opinión</legend>
+
+            <!-- empresa -->
+            <div class="">
+              <label for="input_company" class="form-label text-uppercase text-secondary">Nombre de la empresa</label>
+              <input type="text" class="form-control text-secondary" name="puesto" id="input_company"
+                placeholder="Nombre de la empresa" required />
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar el nombre la empresa</div>
+            </div>
+
+            <!-- años experiencia -->
+            <div class="mt-3">
+              <label for="input_years" class="form-label text-uppercase text-secondary">Años en la empresa</label>
+              <input type="text" class="form-control text-secondary" name="puesto" id="input_years" placeholder="1"
+                required />
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar los años en la empresa</div>
+            </div>
+
+            <!-- sobre la empresa -->
+            <div class="mt-3">
+              <label for="input_about" class="form-label text-uppercase text-secondary">Opinión</label>
+              <textarea class="form-control" id="input_about" rows="3"
+                placeholder="Cuenta tu experiencia en la empresa..." required></textarea>
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar la información de la empresa</div>
+            </div>
+          </div>
+
+          <!-- envío -->
+          <div class="row bg-white rounded-1 shadow py-4 px-2 mt-3 align-items-center justify-content-center">
+            <div class="col-4 col-sm-5 col-lg-7 col text-center">
+              <h4 class="fw-bold mb-3">¿Listo para opinar?</h4>
+              <button type="submit" class="btn btn-primary rounded-5 py-1 px-3">Subir opinión</button>
+            </div>
+            <img src="img/envio.png" alt="Imagen para envío" class="col-4 col-sm-2 col-lg-5 img-fluid">
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Flechas -->
+    <a href="#"><i class="bi bi-arrow-left bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+    <a href="#"><i class="bi bi-arrow-right bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+
+    <!-- Footer -->
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+      <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
+        Gelo
+        (basado en Zine E. Falout)</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Con archivos locales de Bootstrap -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

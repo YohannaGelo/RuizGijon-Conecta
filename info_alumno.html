@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Con archivos locales de Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>Antiguo alumnado y empleo - IES Ruiz Gijón</title>
+</head>
+
+<body class="bg-primary-subtle">
+
+  <div class="container-xl">
+    <!-- Header -->
+    <header class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
+      <!-- logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
+        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+      </figure>
+
+      <!-- switch -->
+      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
+        <a href="index.html" id="ofertas" class="text-decoration-none py-1 ">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="btn btn-primary text-white rounded-5 py-1 px-4">Alumnado</a>
+      </nav>
+
+      <!-- enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
+            class="bi bi-chat ms-1"></i></a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo <i
+            class="bi bi-plus"></i></a>
+      </div>
+
+      <!-- perfil -->
+      <section class="col-xl-2 row align-items-center justify-content-center">
+        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
+        <a href="nuevo_alumno.html"
+          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
+          style="width: 2.7rem;">Y</a>
+        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      </section>
+    </header>
+
+
+    <!-- Información -->
+    <div class="row mx-2 my-3 justify-content-between gap-3">
+
+      <!-- info -->
+      <section class="col bg-white rounded-1 shadow p-4">
+        <!-- datos personales -->
+        <article class="d-flex justify-content-between align-items-center pb-3">
+          <div class="d-flex gap-3 align-items-center">
+            <img src="img/perfil.png" alt="Imagen del usuario" class="rounded-5" style="width: 6rem; height: 6rem;">
+            <div>
+              <p class="btn btn-primary rounded-5 py-0 px-3 mb-0 pe-none">Buscando empleo</p>
+              <p class=" text-secondary mb-0">Desarrollador front-end</p>
+              <h4 class="card-title mt-0">John Doe</h4>
+            </div>
+          </div>
+          <a href="alumnado.html"><i class="bi bi-arrow-left bg-primary rounded-1 text-white my-4 fs-3 px-2 pt-1"></i></a>
+
+        </article>
+        <!-- estudios -->
+        <div class="bg-primary-subtle py-1 px-4">
+          <p class="text-secondary my-2">EDUCACIÓN</p>
+          <!-- estudios 1 -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+            <div>
+              <h6 class="mb-0">IES Ruiz Gijón</h6>
+              <p class="">Formación Profesional Desarrollo Interfaces Web</p>
+            </div>
+            <h5 class="text-primary">2012-2015</h5>
+          </div>
+          <hr class="col-11 mx-auto my-2">
+          <!-- estudios 2 -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+            <div>
+              <h6 class="mb-0">IES Juan Antonio Carrillo Salcedo</h6>
+              <p class="">Formación Profesional Sistemas Microinformáticos y Redes</p>
+            </div>
+            <h5 class="text-primary">2009-2012</h5>
+          </div>
+        </div>
+
+        <!-- experiencia -->
+        <div class="bg-primary-subtle py-1 px-4 mt-3">
+          <p class="text-secondary  my-2">EXPERIENCIA</p>
+          <!-- trabajo -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+            <div>
+              <h6 class="mb-0">Ayesa</h6>
+              <p class="">Desarrollador de front-end</p>
+            </div>
+            <h5 class="text-primary">2015-2025</h5>
+          </div>
+        </div>
+
+        <!-- tecnologias -->
+        <div class="bg-primary-subtle py-1  px-4 mt-3">
+          <p class="text-secondary my-2">TECNOLOGÍAS</p>
+          <p class="">Python, Java, Javascript, SQL, No SQL, AWS infrastructure, Tensor Flow</p>
+        </div>
+      </section>
+
+      <!-- años y opiniones-->
+      <div class="col-lg-4">
+        <!-- años -->
+        <div class="row bg-white rounded-1 shadow">
+          <div class="d-flex justify-content-evenly pt-3">
+            <p class=""><span class="text-primary fw-semibold fs-4">37</span> años</p>
+            <p class=""><span class="text-primary fw-semibold fs-4">6</span> años de experiencia</p>
+          </div>
+        </div>
+
+        <!-- opiniones -->
+        <div class="row bg-white rounded-1 shadow p-4 mt-3">
+          <h4 class="pb-2">Opiniones sobre empresas</h4>
+          <div class="bg-primary-subtle pt-2">
+            <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">NTT Data</span></h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, sint laborum soluta odit ea
+              recusandae velit? Beatae praesentium illum libero!</p>
+          </div>
+          <hr>
+          <div class="bg-primary-subtle pt-2">
+            <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">Indra</span></h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias doloribus perspiciatis quam,
+              labore accusamus.</p>
+          </div>
+          <hr>
+          <div class="bg-primary-subtle pt-2">
+            <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">Nubeado</span></h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+      <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
+        Gelo
+        (basado en Zine E. Falout)</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Con archivos locales de Bootstrap -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Con archivos locales de Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Antiguo alumnado y empleo - IES Ruiz Gijón</title>
+
+</head>
+
+<body class="bg-primary-subtle">
+
+  <div class="container-xl">
+    <!-- Header -->
+    <header
+      class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
+      <!-- logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
+        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+      </figure>
+
+      <!-- switch -->
+      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
+        <a href="index.html" id="ofertas" class="btn btn-primary text-white rounded-5 py-1 px-4">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="text-decoration-none py-1">Alumnado</a>
+      </nav>
+
+      <!-- enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
+        <a href="opiniones.html"
+          class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
+            class="bi bi-chat ms-1"></i></a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo
+          <i class="bi bi-plus"></i></a>
+      </div>
+
+      <!-- perfil -->
+      <section class="col-xl-2 row align-items-center justify-content-center">
+        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
+        <a href="nuevo_alumno.html"
+          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
+          style="width: 2.7rem;">Y</a>
+        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      </section>
+    </header>
+
+    <!-- Formulario -->
+    <form action="#" class="needs-validation" novalidate>
+
+      <!-- contenido principal -->
+      <div class="row mx-2 my-3 justify-content-between gap-3">
+
+        <!-- caja grande -->
+        <section class="col bg-white rounded-1 shadow p-4">
+          <legend class="fw-bold fs-2">Añadir oferta de trabajo</legend>
+
+          <!-- puesto -->
+          <div class="mt-3">
+            <label for="input_job" class="form-label text-uppercase text-secondary">Puesto de trabajo</label>
+            <input type="text" class="form-control text-secondary" name="puesto" id="input_job"
+              placeholder="Ejemplo: Administrador de base de datos" required />
+            <div class="valid-feedback">Correcto</div>
+            <div class="invalid-feedback">Debes completar el puesto de trabajo</div>
+          </div>
+
+          <!-- nombre y fecha -->
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="input_name" class="form-label text-uppercase text-secondary">Nombre de la empresa</label>
+              <input type="text" class="form-control" id="input_name" placeholder="Ejemplo: Guadaltel" required>
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar el nombre de la empresa</div>
+            </div>
+            <div class="col-md-6">
+              <label for="input_date" class="form-label text-uppercase text-secondary">Fecha de la oferta</label>
+              <input type="datetime" class="form-control" id="input_date" placeholder="01/03/2025 - 11:30 AM" required>
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar la fecha de la oferta</div>
+            </div>
+          </div>
+
+          <!-- sobre la empresa -->
+          <div class="mt-3">
+            <label for="input_about" class="form-label text-uppercase text-secondary">Sobre la empresa</label>
+            <textarea class="form-control" id="input_about" rows="3" placeholder="Breve descripción de la empresa..."
+              required></textarea>
+            <div class="valid-feedback">Correcto</div>
+            <div class="invalid-feedback">Debes completar la información de la empresa</div>
+          </div>
+
+          <!-- descripción del trabajo -->
+          <div class="mt-3">
+            <label for="input_desc" class="form-label text-uppercase text-secondary">Descripción sobre la oferta</label>
+            <textarea class="form-control" id="input_desc" rows="2" placeholder="Describa la oferta de trabajo..."
+              required></textarea>
+            <div class="valid-feedback">Correcto</div>
+            <div class="invalid-feedback">Debes completar la descripción</div>
+          </div>
+
+          <!-- jornada y lugar -->
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="input_hours" class="form-label text-uppercase text-secondary">Tipo de jornada</label>
+              <select id="input_hours" class="form-select text-secondary">
+                <option selected>Jornada completa</option>
+                <option>Media Jornada</option>
+                <option>Entre 3/6 horas</option>
+                <option>Menos de 3 horas</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="input_city" class="form-label text-uppercase text-secondary">Localización</label>
+              <input type="text" class="form-control" id="input_city" placeholder="Utera" required>
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar el lugar de trabajo</div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- requisitos -->
+        <div class="col-lg-4">
+
+          <!-- segunda parte formulario -->
+          <div class="row bg-white rounded-1 shadow p-4 px-2">
+            <legend class="fw-bold">Requisitos</legend>
+
+            <!-- ciclo -->
+            <div class="">
+              <label for="input_degree" class="form-label text-uppercase text-secondary">Tipo de jornada</label>
+              <select id="input_degree" class="form-select text-secondary">
+                <option selected disabled>Seleccione...</option>
+                <option>Ciclo medio</option>
+                <option>Ciclo superior</option>
+              </select>
+            </div>
+
+            <!-- especialidad -->
+            <div class="row mt-3 d-flex align-items-end">
+              <div class="col-8 col-md-9">
+                <label for="input_esp" class="form-label text-uppercase text-secondary">Especialidad</label>
+                <select id="input_esp" class="form-select text-secondary">
+                  <option selected>SMR</option>
+                  <option>DAW</option>
+                  <option>DAM</option>
+                </select>
+              </div>
+              <a href="#" class="col d-flex justify-content-end"><i
+                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2 "></i></a>
+            </div>
+
+            <!-- años experiencia -->
+            <div class="mt-3">
+              <label for="input_exp" class="form-label text-uppercase text-secondary">Años de experiencia</label>
+              <input type="text" class="form-control text-secondary" name="puesto" id="input_exp" placeholder="1"
+                required />
+              <div class="valid-feedback">Correcto</div>
+              <div class="invalid-feedback">Debes completar el puesto de trabajo</div>
+            </div>
+
+            <!-- tecnología -->
+            <div class="row mt-3 d-flex align-items-end">
+              <div class="col-8 col-md-9">
+                <label for="input_tec" class="form-label text-uppercase text-secondary">Tecnologías</label>
+                <select id="input_tec" class="form-select text-secondary">
+                  <option selected>JavaScript</option>
+                  <option>CSS</option>
+                  <option>PHP</option>
+                  <option>CSS</option>
+                  <option>SASS</option>
+                  <option>MYSQL</option>
+                </select>
+              </div>
+              <a href="#" class="col d-flex justify-content-end"><i
+                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2 "></i></a>
+            </div>
+          </div>
+
+          <!-- envío -->
+          <div class="row bg-white rounded-1 shadow py-4 px-2 mt-3 align-items-center justify-content-center">
+            <div class="col-4 col-sm-5 col-lg-7 col text-center">
+              <h4 class="fw-bold mb-3">¿Listo para publicar?</h4>
+              <button type="submit" class="btn btn-primary rounded-5 py-1 px-3">Publicar oferta</button>
+            </div>
+            <img src="img/envio.png" alt="Imagen para envío" class="col-4 col-sm-2 col-lg-5 img-fluid">
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+      <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
+        Gelo
+        (basado en Zine E. Falout)</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Con archivos locales de Bootstrap -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

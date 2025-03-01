@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Con archivos locales de Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>Antiguo alumnado y empleo - IES Ruiz Gijón</title>
+</head>
+
+<body class="bg-primary-subtle">
+
+  <div class="container-xl">
+    <!-- Header -->
+    <header class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
+      <!-- logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
+        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+      </figure>
+
+      <!-- switch -->
+      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
+        <a href="index.html" id="ofertas" class="btn btn-primary text-white rounded-5 py-1 px-4">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="text-decoration-none py-1">Alumnado</a>
+      </nav>
+
+      <!-- enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
+            class="bi bi-chat ms-1"></i></a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo <i
+            class="bi bi-plus"></i></a>
+      </div>
+
+      <!-- perfil -->
+      <section class="col-xl-2 row align-items-center justify-content-center">
+        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
+        <a href="nuevo_alumno.html"
+          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
+          style="width: 2.7rem;">Y</a>
+        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      </section>
+    </header>
+
+    <!-- Filtros -->
+    <section class="row justify-content-end mx-2 my-3">
+      <!-- filtros -->
+      <div class="col-xl-6 row gap-2 justify-content-end">
+
+        <div class="col-3 p-0">
+          <select class="form-select bg-white rounded-1 shadow" aria-label="Filtro trabajo por fecha">
+            <option selected>Fecha</option>
+            <option value="1">Más reciente</option>
+            <option value="2">Más antiguo</option>
+          </select>
+        </div>
+
+        <div class="col-4 p-0">
+          <select class="form-select bg-white rounded-1 shadow" aria-label="Filtro trabajo por localización">
+            <option selected>Localización</option>
+            <option value="1">Más reciente</option>
+            <option value="2">Más antiguo</option>
+          </select>
+        </div>
+
+
+        <div class="col-4  p-0">
+          <select class="form-select bg-white rounded-1 shadow" aria-label="Filtro trabajo por categorías">
+            <option selected>Categoría</option>
+            <option value="1">Más reciente</option>
+            <option value="2">Más antiguo</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabajos -->
+    <div class="mx-2">
+      <div class="row row-cols-md-3 row-cols-xl-4">
+        <!-- card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div>
+                <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Activa</p>
+                <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Front-end</p>
+              </div>
+              <h5 class="card-title">Desarrollador Front-end</h5>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+                <i class="bi bi-clock fs-6 mx-2 fs-6 fst-normal"> 8 horas</i>
+                <i class="bi bi-geo-alt fs-6 me-2 fs-6 fst-normal"> Utrera</i>
+              </article>
+              <a href="detalles_trabajo.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
+                  class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Flechas -->
+    <a href="#"><i class="bi bi-arrow-left bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+    <a href="#"><i class="bi bi-arrow-right bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+
+    <!-- Footer -->
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+      <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
+        Gelo
+        (basado en Zine E. Falout)</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Con archivos locales de Bootstrap -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
