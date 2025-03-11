@@ -3733,8 +3733,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #999ea2;
-  --bs-nav-link-hover-color: rgb(90.1384615385, 94.9846153846, 98.8615384615);
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -11845,12 +11845,34 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-primary {
+  background-color: #2b4e84;
+  border-color: #2b4e84;
+}
+.btn-primary:hover {
+  background-color: #1c2256;
+  border-color: #1c2256;
+}
+
+.btn-dark {
+  background-color: #0a1015;
+  border-color: #0a1015;
+}
+.btn-dark:hover {
+  background-color: #1b2d3b;
+  border-color: #1b2d3b;
+}
+
 .form-label {
   letter-spacing: 0.2em;
 }
 
 ::placeholder {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.form-select {
+  color: #999ea2;
 }
 
 /*# sourceMappingURL=app.css.map */
