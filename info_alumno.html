@@ -15,62 +15,72 @@
   <title>Antiguo alumnado y empleo - IES Ruiz Gijón</title>
 </head>
 
-<body class="bg-primary-subtle">
+<body class="bg-primary-subtle d-flex flex-column" style="min-height: 100vh;">
 
-  <div class="container-xl">
+  <div class="container-xl flex-grow-1 d-flex flex-column">
     <!-- Header -->
-    <header class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
-      <!-- logo -->
-      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
-        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+    <header
+      class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 p-2 justify-content-between">
+      <!-- Logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center mt-2">
+        <a href="index.html">
+          <img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid">
+        </a>
       </figure>
 
-      <!-- switch -->
-      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
-        <a href="index.html" id="ofertas" class="text-decoration-none py-1 ">Ofertas</a>
-        <a href="alumnado.html" id="alumnado" class="btn btn-primary text-white rounded-5 py-1 px-4">Alumnado</a>
+      <!-- Switch Navegación -->
+      <nav class="col-10 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-1 d-flex justify-content-around shadow-sm">
+        <a href="index.html" id="ofertas" class="text-decoration-none py-1 text-primary fw-semibold">Ofertas</a>
+        <a href="alumnado.html" id="alumnado"
+          class="btn btn-primary text-white rounded-5 py-1 px-4 shadow-sm">Alumnado</a>
       </nav>
 
-      <!-- enlaces -->
-      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
-        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
-            class="bi bi-chat ms-1"></i></a>
-        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo <i
-            class="bi bi-plus"></i></a>
+      <!-- Botones de Enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-2 mt-3 mt-xl-0">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 text-center py-1 px-3 shadow-sm">
+          Opiniones <i class="bi bi-chat ms-1"></i>
+        </a>
+        <a href="nuevo_trabajo.html"
+          class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1 px-3 shadow-sm">
+          Nuevo Trabajo <i class="bi bi-plus"></i>
+        </a>
       </div>
 
-      <!-- perfil -->
-      <section class="col-xl-2 row align-items-center justify-content-center">
-        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
-        <a href="nuevo_alumno.html"
-          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
-          style="width: 2.7rem;">Y</a>
-        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      <!-- Perfil de Usuario -->
+      <section class="col-xl-2 d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0">
+        <p class="mb-0 fw-semibold text-end me-1 lh-1">Sofía Ramírez</p>
+        <a href="nuevo_alumno.html" class="d-flex align-items-center">
+          <img src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=100"
+            alt="Imagen de usuario" class="img-fluid rounded-circle border border-2 border-primary shadow-sm"
+            style="width: 55px;"></a>
       </section>
     </header>
 
 
     <!-- Información -->
-    <div class="row mx-2 my-3 justify-content-between gap-3">
+    <div class="row mx-2 my-3 justify-content-between gap-3 flex-grow-1">
 
       <!-- info -->
       <section class="col bg-white rounded-1 shadow p-4">
         <!-- datos personales -->
-        <article class="d-flex justify-content-between align-items-center pb-3">
+        <article class="d-flex justify-content-between align-items-center py-3">
           <div class="d-flex gap-3 align-items-center">
-            <img src="img/perfil.png" alt="Imagen del usuario" class="rounded-5" style="width: 6rem; height: 6rem;">
+            <img
+              src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=200"
+              alt="Imagen del usuario" class="img-fluid rounded-circle border border-2 border-primary shadow-sm"
+              style="width: 6rem; height: 6rem; object-fit: cover;">
             <div>
               <p class="btn btn-primary rounded-5 py-0 px-3 mb-0 pe-none">Buscando empleo</p>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
+              <p class=" text-secondary mb-0 ms-1">Arquitecto Cloud</p>
+              <h3 class="card-title mt-0 ms-1">Pedro Martínez</h3>
             </div>
           </div>
-          <a href="alumnado.html"><i class="bi bi-arrow-left bg-primary rounded-1 text-white my-4 fs-3 px-2 pt-1"></i></a>
+
 
         </article>
         <!-- estudios -->
         <div class="bg-primary-subtle py-1 px-4">
-          <p class="text-secondary my-2">EDUCACIÓN</p>
+          <p class="text-secondary my-1">EDUCACIÓN</p>
           <!-- estudios 1 -->
           <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
             <div>
@@ -79,7 +89,7 @@
             </div>
             <h5 class="text-primary">2012-2015</h5>
           </div>
-          <hr class="col-11 mx-auto my-2">
+          <hr class="col-11 mx-auto my-1 mb-2">
           <!-- estudios 2 -->
           <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
             <div>
@@ -92,21 +102,40 @@
 
         <!-- experiencia -->
         <div class="bg-primary-subtle py-1 px-4 mt-3">
-          <p class="text-secondary  my-2">EXPERIENCIA</p>
-          <!-- trabajo -->
+          <p class="text-secondary my-1">EXPERIENCIA</p>
+
+          <!-- trabajo 1 -->
           <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
             <div>
-              <h6 class="mb-0">Ayesa</h6>
-              <p class="">Desarrollador de front-end</p>
+              <h6 class="mb-0">Nubeado</h6>
+              <p class="">Ingeniero de Software</p>
             </div>
-            <h5 class="text-primary">2015-2025</h5>
+            <h5 class="text-primary">2018-2024</h5>
           </div>
+
+          <hr class="col-11 mx-auto my-1 mb-2">
+
+          <!-- trabajo 2 -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+            <div>
+              <h6 class="mb-0">Indra</h6>
+              <p class="">Desarrollador Full Stack</p>
+            </div>
+            <h5 class="text-primary">2015-2018</h5>
+          </div>
+
         </div>
+
 
         <!-- tecnologias -->
         <div class="bg-primary-subtle py-1  px-4 mt-3">
-          <p class="text-secondary my-2">TECNOLOGÍAS</p>
+          <p class="text-secondary my-2 mb-0">TECNOLOGÍAS</p>
           <p class="">Python, Java, Javascript, SQL, No SQL, AWS infrastructure, Tensor Flow</p>
+        </div>
+
+        <div class="bg-primary-subtle py-1  px-4 mt-3">
+          <p class="text-secondary my-2 mb-0">ESTADO</p>
+          <p class="">Buscando empleo</p>
         </div>
       </section>
 
@@ -114,30 +143,32 @@
       <div class="col-lg-4">
         <!-- años -->
         <div class="row bg-white rounded-1 shadow">
-          <div class="d-flex justify-content-evenly pt-3">
-            <p class=""><span class="text-primary fw-semibold fs-4">37</span> años</p>
-            <p class=""><span class="text-primary fw-semibold fs-4">6</span> años de experiencia</p>
+          <div class="d-flex justify-content-evenly pt-2 pb-0">
+            <p class=""><span class="text-primary fw-semibold fs-4">28</span> años</p>
+            <p class=""><span class="text-primary fw-semibold fs-4">9</span> años de experiencia</p>
           </div>
         </div>
 
         <!-- opiniones -->
         <div class="row bg-white rounded-1 shadow p-4 mt-3">
           <h4 class="pb-2">Opiniones sobre empresas</h4>
-          <div class="bg-primary-subtle pt-2">
+          <div class="bg-primary-subtle p-3 pt-3">
             <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">NTT Data</span></h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, sint laborum soluta odit ea
-              recusandae velit? Beatae praesentium illum libero!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, porro hic natus perspiciatis error quo
+              qui nulla ad temporibus est molestiae esse culpa et distinctio aut obcaecati aperiam veniam necessitatibus
+              commodi molestias.</p>
           </div>
           <hr>
-          <div class="bg-primary-subtle pt-2">
+          <div class="bg-primary-subtle p-3 pt-3">
             <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">Indra</span></h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias doloribus perspiciatis quam,
               labore accusamus.</p>
           </div>
           <hr>
-          <div class="bg-primary-subtle pt-2">
+          <div class="bg-primary-subtle p-3 pt-3">
             <h5 class="fw-light text-secondary">Empresa: <span class="fw-semibold">Nubeado</span></h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas!
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum explicabo officia quod, iusto
+              incidunt praesentium corporis vitae, eos cumque veritatis.
             </p>
           </div>
         </div>
@@ -146,7 +177,7 @@
 
 
     <!-- Footer -->
-    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3 mt-auto">
       <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
         Gelo
         (basado en Zine E. Falout)</p>

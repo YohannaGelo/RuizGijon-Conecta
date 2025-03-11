@@ -15,50 +15,52 @@
 
 </head>
 
-<body class="bg-primary-subtle">
+<body class="bg-primary-subtle d-flex flex-column" style="min-height: 100vh;">
+  <div class="container-xl d-flex flex-column flex-grow-1">
 
-  <div class="container-xl">
     <!-- Header -->
     <header
-      class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
-      <!-- logo -->
-      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
-        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+      class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 p-2 justify-content-between">
+      <!-- Logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center mt-2">
+        <a href="index.html">
+          <img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid">
+        </a>
       </figure>
 
-      <!-- switch -->
-      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
-        <a href="index.html" id="ofertas" class="btn btn-primary text-white rounded-5 py-1 px-4">Ofertas</a>
-        <a href="alumnado.html" id="alumnado" class="text-decoration-none py-1">Alumnado</a>
+      <!-- Switch Navegación -->
+      <nav class="col-10 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-1 d-flex justify-content-around shadow-sm">
+        <a href="index.html" id="ofertas" class="btn btn-primary text-white rounded-5 py-1 px-4 shadow-sm">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="text-decoration-none py-1 text-primary fw-medium">Alumnado</a>
       </nav>
 
-      <!-- enlaces -->
-      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
-        <a href="opiniones.html"
-          class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
-            class="bi bi-chat ms-1"></i></a>
-        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo
-          <i class="bi bi-plus"></i></a>
+      <!-- Botones de Enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-2 mt-3 mt-xl-0">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 text-center py-1 px-3 shadow-sm">
+          Opiniones <i class="bi bi-chat ms-1"></i>
+        </a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1 px-3 shadow-sm">
+          Nuevo Trabajo <i class="bi bi-plus"></i>
+        </a>
       </div>
 
-      <!-- perfil -->
-      <section class="col-xl-2 row align-items-center justify-content-center">
-        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
-        <a href="nuevo_alumno.html"
-          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
-          style="width: 2.7rem;">Y</a>
-        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      <!-- Perfil de Usuario -->
+      <section class="col-xl-2 d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0">
+        <p class="mb-0 fw-semibold text-end me-1 lh-1">Sofía Ramírez</p>
+        <a href="nuevo_alumno.html" class="d-flex align-items-center">
+          <img src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=100"
+            alt="Imagen de usuario" class="img-fluid rounded-circle border border-2 border-primary shadow-sm"
+            style="width: 55px;"></a>
       </section>
     </header>
 
     <!-- Formulario -->
-    <form action="#" class="needs-validation" novalidate>
-
+    <form action="#" class="needs-validation d-flex flex-column flex-grow-1" novalidate>
       <!-- contenido principal -->
-      <div class="row mx-2 my-3 justify-content-between gap-3">
+      <div class="row mx-2 my-3 justify-content-between gap-3 flex-grow-1">
 
         <!-- caja grande -->
-        <section class="col bg-white rounded-1 shadow p-4">
+        <section class="col bg-white rounded-1 shadow p-4 d-flex flex-column flex-grow-1">
           <legend class="fw-bold fs-2">Añadir oferta de trabajo</legend>
 
           <!-- puesto -->
@@ -89,7 +91,7 @@
           <!-- sobre la empresa -->
           <div class="mt-3">
             <label for="input_about" class="form-label text-uppercase text-secondary">Sobre la empresa</label>
-            <textarea class="form-control" id="input_about" rows="3" placeholder="Breve descripción de la empresa..."
+            <textarea class="form-control" id="input_about" rows="5" placeholder="Breve descripción de la empresa..."
               required></textarea>
             <div class="valid-feedback">Correcto</div>
             <div class="invalid-feedback">Debes completar la información de la empresa</div>
@@ -98,7 +100,7 @@
           <!-- descripción del trabajo -->
           <div class="mt-3">
             <label for="input_desc" class="form-label text-uppercase text-secondary">Descripción sobre la oferta</label>
-            <textarea class="form-control" id="input_desc" rows="2" placeholder="Describa la oferta de trabajo..."
+            <textarea class="form-control" id="input_desc" rows="5" placeholder="Describa la oferta de trabajo..."
               required></textarea>
             <div class="valid-feedback">Correcto</div>
             <div class="invalid-feedback">Debes completar la descripción</div>
@@ -127,7 +129,6 @@
 
         <!-- requisitos -->
         <div class="col-lg-4">
-
           <!-- segunda parte formulario -->
           <div class="row bg-white rounded-1 shadow p-4 px-2">
             <legend class="fw-bold">Requisitos</legend>
@@ -153,7 +154,7 @@
                 </select>
               </div>
               <a href="#" class="col d-flex justify-content-end"><i
-                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2 "></i></a>
+                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2  shadow-sm"></i></a>
             </div>
 
             <!-- años experiencia -->
@@ -179,7 +180,7 @@
                 </select>
               </div>
               <a href="#" class="col d-flex justify-content-end"><i
-                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2 "></i></a>
+                  class="bi bi-plus bg-primary rounded-1 text-white ms-2 px-3 py-2  shadow-sm"></i></a>
             </div>
           </div>
 
@@ -187,29 +188,24 @@
           <div class="row bg-white rounded-1 shadow py-4 px-2 mt-3 align-items-center justify-content-center">
             <div class="col-4 col-sm-5 col-lg-7 col text-center">
               <h4 class="fw-bold mb-3">¿Listo para publicar?</h4>
-              <button type="submit" class="btn btn-primary rounded-5 py-1 px-3">Publicar oferta</button>
+              <button type="submit" class="btn btn-primary rounded-5 py-1 px-3 shadow-sm">Publicar oferta</button>
             </div>
             <img src="img/envio.png" alt="Imagen para envío" class="col-4 col-sm-2 col-lg-5 img-fluid">
           </div>
-
         </div>
-
       </div>
     </form>
 
     <!-- Footer -->
-    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3 mt-auto">
       <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
-        Gelo
-        (basado en Zine E. Falout)</p>
+        Gelo (basado en Zine E. Falout)</p>
     </footer>
-
   </div>
-
 
   <!-- Con archivos locales de Bootstrap -->
   <script src="js/bootstrap.bundle.js"></script>
-
 </body>
+
 
 </html>

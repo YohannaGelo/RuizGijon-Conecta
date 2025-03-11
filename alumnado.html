@@ -15,37 +15,41 @@
 
 </head>
 
-<body class="bg-primary-subtle">
+<body class="bg-primary-subtle d-flex flex-column" style="min-height: 100vh;">
 
-  <div class="container-xl">
+  <div class="container-xl flex-grow-1 d-flex flex-column">
     <!-- Header -->
-    <header class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 justify-content-between">
-      <!-- logo -->
-      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 row mt-2">
-        <a href="index.html"><img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid"></a>
+    <header
+      class="row flex-column flex-xl-row align-items-center bg-white rounded-2 shadow m-2 p-2 justify-content-between">
+      <!-- Logo -->
+      <figure class="col-8 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center mt-2">
+        <a href="index.html">
+          <img src="img/banner_RG_web.png" alt="Logo IES Ruiz Gijón" class="img-fluid">
+        </a>
       </figure>
 
-      <!-- switch -->
-      <nav class="col-11 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-2 py-1 mx-sm-5 d-flex justify-content-around">
-        <a href="index.html" id="ofertas" class="text-decoration-none py-1 ">Ofertas</a>
-        <a href="alumnado.html" id="alumnado" class="btn btn-primary text-white rounded-5 py-1 px-4">Alumnado</a>
+      <!-- Switch Navegación -->
+      <nav class="col-10 col-sm-7 col-xl-3 rounded-5 bg-primary-subtle p-1 d-flex justify-content-around shadow-sm">
+        <a href="index.html" id="ofertas" class="text-decoration-none py-1 text-primary fw-semibold">Ofertas</a>
+        <a href="alumnado.html" id="alumnado" class="btn btn-primary text-white rounded-5 py-1 px-4 shadow-sm">Alumnado</a>
       </nav>
 
-      <!-- enlaces -->
-      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-0 mt-3 mt-xl-0 ">
-        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 me-sm-2 ms-sm-3 text-center py-1">Opiniones <i
-            class="bi bi-chat ms-1"></i></a>
-        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1">Nuevo Trabajo <i
-            class="bi bi-plus"></i></a>
+      <!-- Botones de Enlaces -->
+      <div class="row col-xl-4 justify-content-center gap-3 gap-sm-4 gap-xl-2 mt-3 mt-xl-0">
+        <a href="opiniones.html" class="col-sm-4 col-xl-5 btn btn-dark rounded-5 text-center py-1 px-3 shadow-sm">
+          Opiniones <i class="bi bi-chat ms-1"></i>
+        </a>
+        <a href="nuevo_trabajo.html" class="col-sm-4 col-xl-6 btn btn-primary rounded-5 text-center py-1 px-3 shadow-sm">
+          Nuevo Trabajo <i class="bi bi-plus"></i>
+        </a>
       </div>
 
-      <!-- perfil -->
-      <section class="col-xl-2 row align-items-center justify-content-center">
-        <p class="col-5 col-xl-7 mt-4 mt-xl-3">Bienvenido John Doe</p>
-        <a href="nuevo_alumno.html"
-          class="bg-black rounded-5 mx-2 col-2 col-xl-4 img-fluid p-1 p-xl-2 text-light fw-bolder text-center fs-5 text-decoration-none"
-          style="width: 2.7rem;">Y</a>
-        <!-- <img src="img/perfil.jpg" alt="Imagen de usuario" class="bg-black rounded-5 col-4 img-fluid"> -->
+      <!-- Perfil de Usuario -->
+      <section class="col-xl-2 d-flex align-items-center justify-content-center gap-2 mt-3 mt-xl-0">
+        <p class="mb-0 fw-semibold">Inicia sesión</p>
+        <a href="nuevo_alumno.html" class="d-flex align-items-center">
+          <img src="img/perfil.png" alt="Imagen de usuario" class="img-fluid rounded-circle" style="width: 55px;">
+        </a>
       </section>
     </header>
 
@@ -59,7 +63,10 @@
             <option selected>Puesto</option>
             <option value="1">Front-end</option>
             <option value="2">Back-end</option>
-            <option value="3">Base de datos</option>
+            <option value="3">Full-stack</option>
+            <option value="4">Data Science</option>
+            <option value="5">Cloud</option>
+            <option value="6">Mobile</option>
           </select>
         </div>
 
@@ -79,79 +86,116 @@
             <option selected>Situación</option>
             <option value="1">Trabajando</option>
             <option value="2">Desempleado</option>
+            <option value="3">Buscando empleo</option>
           </select>
         </div>
       </div>
     </section>
 
-    <!-- Alumnos -->
-    <div class="mx-2">
-      <div class="row row-cols-md-3 row-cols-xl-4">
-        <!-- card 1 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+    <!-- Alumnado -->
+    <div class="mx-2 flex-grow-1">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-3">
+
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Buscando empleo</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">28 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Desarrollador Front-end</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Ana López</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 3 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-secondary rounded-5 py-0 px-3 pe-none">Trabajando</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">32 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Ingeniero Back-end</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Carlos Ruiz</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 5 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 3 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Desempleado</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">25 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Desarrollador Full-stack</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">María Gómez</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 2 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 4 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Buscando empleo</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">30 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/769772/pexels-photo-769772.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Especialista en Ciberseguridad</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Javier Pérez</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
                 <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
@@ -159,71 +203,107 @@
             </div>
           </div>
         </div>
-        <!-- card 5 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Buscando empleo</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">27 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/2128818/pexels-photo-2128818.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Desarrollador Mobile</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Laura Sánchez</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 3 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 6 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 6 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-primary rounded-5 py-0 px-3 pe-none">Buscando empleo</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">29 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Arquitecto Cloud</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Pedro Martínez</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 6 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 7 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 7 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-dark rounded-5 py-0 px-3 pe-none">Desempleado</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">26 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
-                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Científico de Datos</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Sofía Ramírez</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
+                <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 2 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
                   class="bi bi-arrow-right fs-6 me-2 fw-bolder"></i></a>
             </div>
           </div>
         </div>
-        <!-- card 8 -->
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mb-3">
-            <div class="card-body">
+
+        <!-- Card 8 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm py-3">
+            <div class="card-body d-flex flex-column">
               <div class="d-flex justify-content-between">
                 <p class="btn btn-secondary rounded-5 py-0 px-3 pe-none">Trabajando</p>
-                <p class=" text-secondary">31 años</p>
+                <p class="text-secondary">31 años</p>
               </div>
-              <p class=" text-secondary mb-0">Desarrollador front-end</p>
-              <h4 class="card-title mt-0">John Doe</h4>
-              <article class="d-flex bg-primary-subtle justify-content-evenly py-1 my-3 text-secondary">
+              <div class="d-flex align-items-center mb-4">
+                <img
+                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Imagen de perfil" class="rounded-circle me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <p class="text-secondary mb-2 small" style="min-height: 2rem;">Desarrollador DevOps</p>
+                  <h5 class="card-title mt-0" style="min-height: 2.5rem;">Miguel Torres</h5>
+                </div>
+              </div>
+              <article class="d-flex bg-primary-subtle justify-content-evenly py-2 my-3 mt-auto text-secondary rounded">
                 <i class="bi bi-clock-history fs-6 mx-2 fs-6 fst-normal"> 4 años experiencia</i>
               </article>
               <a href="info_alumno.html" class="text-primary text-decoration-none fw-semibold">Ver Detalles <i
@@ -237,11 +317,13 @@
 
 
     <!-- Flechas -->
-    <a href="#"><i class="bi bi-arrow-left bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
-    <a href="#"><i class="bi bi-arrow-right bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+    <div class="mx-2 my-3">
+      <a href="#"><i class="bi bi-arrow-left bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+      <a href="#"><i class="bi bi-arrow-right bg-primary rounded-1 text-white ms-2 my-3 px-3 py-2"></i></a>
+    </div>
 
     <!-- Footer -->
-    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3">
+    <footer class="row bg-white rounded-2 ps-3 shadow mx-2 my-3 mt-auto">
       <p class="text-secondary fs-6 pt-3">2025 &copy; IES Ruiz Gijón - Todos los derechos reservados. Diseño Yohanna
         Gelo
         (basado en Zine E. Falout)</p>
