@@ -1,0 +1,16 @@
+{
+  "name": "antiguo-alumnado",
+  "version": "1.0.0",
+  "description": "Proyecto final para DIW en 2 DAW. Página para gestionar empleos y contacto entre antiguos alumnos del centro.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilar:sass": "sass --watch src/scss:build/css"
+  },
+  "author": "Yohanna Gelo",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.85.1"
+  }
+}

@@ -13,6 +13,8 @@ Cambiar color de botón: btn-dark (hover) -> #1b2d3b
 
 Cambiar color de botón: btn-secondary -> #bec9d3
 
+btn-outline-secondary
+bg-light
 ---
 **Fuentes:**
 Familia: manrope (400 900)

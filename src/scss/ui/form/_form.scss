@@ -1,0 +1,9 @@
+@use '../custom/custom' as cus;
+.form-label {
+    letter-spacing: 0.2em; 
+}
+
+::placeholder {
+    font-size: 0.8rem;
+
+}
